@@ -1,14 +1,20 @@
-# Jobs4uBD
-A modern, responsive career web portal for daily job circulars and official recruitment notices in Bangladesh.
-# 💼 Jobs4uBD (JobsForYou-BD)
+# Jobs4uBD 🚀
 
-**Jobs4uBD** is a modern, responsive, and lightweight web portal designed to deliver daily job circulars, career opportunities, and official notifications across Bangladesh. 
+**Jobs4uBD** is a modern, fast, and responsive career and job portal designed for job seekers in Bangladesh. It aggregates daily job circulars including government, private, bank, and local openings.
 
-### ✨ Features
-* 🏛️ **Government & Private Job Updates:** Fast access to official notices and circulars.
-* 🏦 **Bank & Defense Job Listings:** Well-categorized job notifications for quick search.
-* 📱 **Fully Responsive UI:** Built with clean HTML5 & CSS3 for smooth performance on all devices.
-* ⚡ **Fast & Lightweight:** Optimized structure hosted seamlessly via GitHub Pages.
+## ✨ Features
+* **Daily Updates:** Latest job listings updated regularly.
+* **Responsive Design:** Fully optimized for both desktop and mobile devices.
+* **Categories:** Easy filtering for Govt Jobs, Private Jobs, Bank Jobs, and more.
+* **Dark Theme:** Clean GitHub-inspired dark UI for a comfortable viewing experience.
+
+## 🛠️ Built With
+* **HTML5** & **CSS3**
+* **FontAwesome** Icons
+* **JavaScript**
+
+## 🌐 Live Website
+Check out the live website here: [Jobs4uBD on GitHub Pages](https://shazzad-007.github.io/Jobs4uBD/)
 
 ---
-🎯 *Empowering career growth and connecting job seekers in Bangladesh with the right opportunities.*
+© 2026 Jobs4uBD. All rights reserved.
