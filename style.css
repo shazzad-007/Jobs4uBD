@@ -1,245 +1,46 @@
-/* General CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
-}
-
-body {
-    background-color: #0d1117;
-    color: #e6edf3;
-    line-height: 1.6;
-}
-
-/* Header Styles */
-.main-header {
-    background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #e74c3c;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-}
-
-.brand-logo {
-    max-width: 280px;
-    height: auto;
-    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.6));
-    transition: transform 0.4s ease;
-}
-
-.brand-logo:hover {
-    transform: scale(1.03);
-}
-
-/* Navbar Styles */
-.navbar {
-    background-color: #161b22;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #30363d;
-}
-
-.navbar a {
-    color: #c9d1d9;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: all 0.3s ease;
-}
-
-.navbar a:hover, .navbar a.active {
-    background-color: #e74c3c;
-    color: #ffffff;
-    box-shadow: 0 2px 10px rgba(231, 76, 60, 0.4);
-}
-
-/* Container Layout */
-.container {
-    max-width: 1150px;
-    margin: 30px auto;
-    padding: 0 15px;
-    display: grid;
-    grid-template-columns: 2.8fr 1.2fr;
-    gap: 25px;
-}
-
-/* Job Cards Setup & Animations */
-.job-card {
-    background-color: #161b22;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    border: 1px solid #30363d;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    animation: fadeInUp 0.8s ease-out;
-}
-
-.job-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(231, 76, 60, 0.2);
-    border-color: #e74c3c;
-}
-
-.card-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: #e74c3c;
-    color: white;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 4px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-}
-
-.bank-badge {
-    background-color: #2980b9;
-}
-
-.job-card h2 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    padding-right: 80px;
-}
-
-.job-meta {
-    font-size: 13px;
-    color: #8b949e;
-    margin-bottom: 15px;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.job-card p {
-    font-size: 14.5px;
-    color: #c9d1d9;
-    margin-bottom: 20px;
-}
-
-/* Button & Animations */
-.btn-apply {
-    display: inline-block;
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-    color: #ffffff;
-    padding: 12px 22px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    border: none;
-}
-
-.btn-apply:hover {
-    background: linear-gradient(135deg, #ff5e4d 0%, #d63031 100%);
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.5);
-}
-
-/* Pulse Animation for Button */
-.pulse-animation {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Sidebar Widgets */
-.widget {
-    background-color: #161b22;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    border: 1px solid #30363d;
-}
-
-.widget h3 {
-    font-size: 17px;
-    color: #ffffff;
-    border-bottom: 2px solid #e74c3c;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
-}
-
-.category-list {
-    list-style: none;
-}
-
-.category-list li {
-    margin-bottom: 12px;
-}
-
-.category-list a {
-    text-decoration: none;
-    color: #c9d1d9;
-    font-size: 14px;
-    transition: color 0.3s ease, padding-left 0.3s ease;
-    display: block;
-}
-
-.category-list a:hover {
-    color: #e74c3c;
-    padding-left: 5px;
-}
-
-.ad-placeholder {
-    color: #8b949e;
-    text-align: center;
-    padding: 30px 0;
-    border: 1px dashed #30363d;
-    border-radius: 6px;
-}
-
-/* Footer */
-.main-footer {
-    background-color: #161b22;
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #30363d;
-    color: #8b949e;
-    font-size: 13px;
-    margin-top: 40px;
-}
-
-/* Responsive Setup */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-    
-    .job-card h2 {
-        padding-right: 0;
-    }
-    
-    .card-badge {
-        position: relative;
-        display: inline-block;
-        top: 0;
-        right: 0;
-        margin-bottom: 10px;
-    }
-}
+/* Jobs4uBD — responsive professional redesign */
+:root{--navy:#071b35;--navy2:#0b2a4e;--blue:#1265a8;--orange:#ff851b;--gold:#ffc857;--ink:#15263b;--muted:#64748b;--paper:#f3f7fc;--white:#fff;--line:#dbe5f0;--shadow:0 12px 34px rgba(9,35,67,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+a{color:inherit}
+.main-header{background:radial-gradient(ellipse at 80% 0%,#174d7b 0,transparent 40%),linear-gradient(130deg,var(--navy),var(--navy2));padding:24px 18px;border-bottom:4px solid var(--orange);text-align:center;overflow:hidden}
+.logo-container{max-width:1120px;margin:auto}
+.brand-logo{display:block;width:min(100%,1000px);height:auto;max-height:220px;object-fit:contain;margin:auto;filter:drop-shadow(0 10px 24px rgba(0,0,0,.2));transition:transform .35s ease}
+.brand-logo:hover{transform:translateY(-3px)}
+.navbar{position:sticky;top:0;z-index:50;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;padding:10px 14px;background:rgba(7,27,53,.96);border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 8px 22px rgba(4,22,44,.14);backdrop-filter:blur(12px)}
+.navbar a{display:inline-flex;align-items:center;gap:9px;color:#e8f1fb;text-decoration:none;font-weight:650;font-size:.95rem;padding:10px 16px;border-radius:10px;transition:background .2s,color .2s,transform .2s}
+.navbar a:hover,.navbar a.active{background:var(--orange);color:#fff;transform:translateY(-1px)}
+.container{width:min(1160px,calc(100% - 32px));margin:32px auto 48px;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:28px;align-items:start}
+.main-content{min-width:0}
+.main-content:before{content:"সর্বশেষ চাকরির খবর";display:block;font-size:1.45rem;font-weight:850;color:var(--navy);padding:0 0 15px;margin-bottom:18px;border-bottom:2px solid var(--line)}
+.job-card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:25px;margin:0 0 22px;box-shadow:var(--shadow);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;animation:riseIn .55s both}
+.job-card:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(var(--orange),var(--gold))}
+.job-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(9,35,67,.15);border-color:#b7cde3}
+.card-badge{display:inline-flex;align-items:center;background:#fff1e5;color:#b74b00;border:1px solid #ffd4b1;padding:5px 11px;border-radius:999px;font-size:.78rem;font-weight:800;margin-bottom:12px}
+.bank-badge{background:#e8f2ff;color:#135ba1;border-color:#c6ddfb}
+.job-card h2{font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.4;color:var(--navy);margin:0 0 12px;font-weight:800}
+.job-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:14px;color:var(--muted);font-size:.87rem}
+.job-meta span{display:inline-flex;align-items:center;gap:7px}
+.job-meta i{color:var(--blue)}
+.job-card p{color:#46576c;margin-bottom:20px}
+.btn-group{display:flex;flex-wrap:wrap;gap:10px}
+.btn-apply{display:inline-flex;justify-content:center;align-items:center;gap:9px;text-decoration:none;color:#fff!important;background:linear-gradient(120deg,#f97316,#ff9f1c);padding:12px 18px;border-radius:11px;font-weight:800;box-shadow:0 7px 16px rgba(249,115,22,.22);transition:transform .2s,filter .2s}
+.btn-apply:hover{transform:translateY(-2px);filter:saturate(1.1)}
+.sidebar{display:grid;gap:20px}
+.widget{background:var(--white);border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:var(--shadow)}
+.widget h3{font-size:1.05rem;color:var(--navy);padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid var(--line)}
+.widget h3 i{color:var(--orange);margin-right:8px}
+.category-list{list-style:none;display:grid;gap:4px}
+.category-list a{display:flex;align-items:center;gap:9px;text-decoration:none;color:#40536b;padding:10px 8px;border-radius:9px;font-weight:600;transition:background .2s,color .2s}
+.category-list a i{font-size:.75rem;color:var(--orange)}
+.category-list a:hover{background:#edf5ff;color:var(--blue)}
+.ad-container{min-height:110px;display:grid;place-items:center;border:1px dashed #b9c9dc;border-radius:12px;background:#f7faff;padding:16px}
+.ad-placeholder{font-size:.85rem;color:#7a8ba0;text-align:center}
+.main-footer{background:var(--navy);color:#d7e5f5;text-align:center;padding:24px 18px;border-top:4px solid var(--orange);font-size:.9rem}
+.pulse-animation{animation:softPulse 2.8s infinite}
+@keyframes riseIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes softPulse{0%,100%{box-shadow:0 7px 16px rgba(249,115,22,.22)}50%{box-shadow:0 8px 24px rgba(249,115,22,.38)}}
+@media(max-width:900px){.container{grid-template-columns:minmax(0,1fr) 260px;gap:18px}.job-card{padding:22px}.widget{padding:18px}}
+@media(max-width:700px){.main-header{padding:16px 12px}.brand-logo{max-height:150px}.navbar{position:relative;gap:4px;padding:8px}.navbar a{font-size:.86rem;padding:9px 11px}.container{width:min(100% - 24px,600px);margin:22px auto 34px;grid-template-columns:1fr;gap:20px}.main-content:before{font-size:1.3rem}.job-card{padding:21px 18px;border-radius:15px}.sidebar{grid-template-columns:1fr}.job-meta{font-size:.82rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
