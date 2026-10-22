@@ -4,10 +4,30 @@
 html{scroll-behavior:smooth}
 body{font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
 a{color:inherit}
-.main-header{background:radial-gradient(ellipse at 80% 0%,#174d7b 0,transparent 40%),linear-gradient(130deg,var(--navy),var(--navy2));padding:24px 18px;border-bottom:4px solid var(--orange);text-align:center;overflow:hidden}
-.logo-container{max-width:1120px;margin:auto}
-.brand-logo{display:block;width:min(100%,1000px);height:auto;max-height:220px;object-fit:contain;margin:auto;filter:drop-shadow(0 10px 24px rgba(0,0,0,.2));transition:transform .35s ease}
-.brand-logo:hover{transform:translateY(-3px)}
+.main-header/* Header Styles */
+.main-header {
+    background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #e74c3c;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+.brand-logo {
+    width: 100%;
+    max-width: 1000px; /* আপনার ব্যানারের সর্বোচ্চ চওড়া বাড়াতে এটি বাড়ানো হয়েছে */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* কর্নারগুলো একটু রাউন্ড বা সুন্দর দেখানোর জন্য */
+    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.6));
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.01);
+}
 .navbar{position:sticky;top:0;z-index:50;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;padding:10px 14px;background:rgba(7,27,53,.96);border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 8px 22px rgba(4,22,44,.14);backdrop-filter:blur(12px)}
 .navbar a{display:inline-flex;align-items:center;gap:9px;color:#e8f1fb;text-decoration:none;font-weight:650;font-size:.95rem;padding:10px 16px;border-radius:10px;transition:background .2s,color .2s,transform .2s}
 .navbar a:hover,.navbar a.active{background:var(--orange);color:#fff;transform:translateY(-1px)}
